@@ -1,48 +1,22 @@
-## What is this
-This make a virtual REST API server on GitHub repository.
-By analyzing JSON files, the script makes directories and some files.
-User can access datas of JSON file as if REST API server
+# mozune-api/vinfo
 
-## Sample
-Now sample.json is in ./json and have following structure.
+桃鈴ねねさんの動画情報を取得できるAPIを提供しています。
 
-```json
+現在提供できるのは、投稿日時、YouTube上での動画ID（youtube.com/watch/?v=xxxxxxxxxxのxxxxxxxxxx）、タイトルの3つとなっております。
 
-{
-    "data": [
-        {
-            "no": "1",
-            "date": "2020-01-28T00:00",
-            "place": "japan",
-            "age": "22",
-            "sex": "female"
-        },
-        {
-            "no": "2",
-            "date": "2020-02-14T00:00",
-            "place": "australia",
-            "age": "50",
-            "sex": "male"
-        }
-    ],
-    "last_update": "2020-03-14T23:14:01.849130+09:00"
-}
-```
+# できること
 
-The script loads JSON files in ./json .
+## すべての動画情報を取得
 
-Now only 'sample.json' is in ./json . When main.py runs and loads sample.json, it makes files as you can access like following.
+[mozune-api.github.io/vinfo/api/v1/](mozune-api.github.io/vinfo/api/v1/)にアクセスすると桃鈴ねねさんが公開しているすべての動画情報がJson形式で取得できます。
 
-|  data you want  |  REST API URL  |
-| ---- | ---- |
-|  all of sample.json  |  https://kanahiro.github.io/gh-pages-rest-api/sample  |
-|  last_update of sample.json  |  https://kanahiro.github.io/gh-pages-rest-api/sample/last_update  |
-|  data[0] of sample.json  |  https://kanahiro.github.io/gh-pages-rest-api/sample/data/0  |
-|  data[1] of sample.json  |  https://kanahiro.github.io/gh-pages-rest-api/sample/data/1  |
-|  data[1]['no'] of sample.json  |  https://kanahiro.github.io/gh-pages-rest-api/sample/data/1/no  |
+# 参考
 
-## Usage
-1. Fork this repo
-2. Activate GitHub Actions and Pages (gh-pages)
-3. Set JSON files in ./json
-4. Push to master and fire Actions, then start hosting.
+- [さなボタン(2)](https://www.natorisana.love/)
+- [さなボタン(2) - Github](https://github.com/sanabutton)
+- [GitHub Pagesを活用して擬似REST APIサーバーを作る](https://qiita.com/Kanahiro/items/9cfa6fa5cc9c3fcb57fd)
+- [YoutubeDataAPI](https://developers.google.com/youtube/v3/docs?hl=ja)
+
+# 連絡先
+
+バグの報告やご意見はnenebutton@gmail.comまで
