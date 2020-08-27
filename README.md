@@ -8,7 +8,7 @@
 
 ## すべての動画情報を取得
 
-[mozune-api.github.io/vinfo/api/v1/](mozune-api.github.io/vinfo/api/v1/)にアクセスすると桃鈴ねねさんが公開しているすべての動画情報がJson形式で取得できます。
+[mozune-api.github.io/vinfo/api/v1/](https://mozune-api.github.io/vinfo/api/v1/)にアクセスすると桃鈴ねねさんが公開しているすべての動画情報がJson形式で取得できます。
 
 # 参考
 
