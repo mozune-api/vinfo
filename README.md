@@ -1,6 +1,6 @@
 # mozune-api/vinfo
 
-桃鈴ねねさんの動画情報を取得できるAPIを提供しています。
+[桃鈴ねねさん](https://www.youtube.com/channel/UCAWSyEs_Io8MtpY3m-zqILA)の動画情報を取得できるAPIを提供しています。
 
 現在提供できるのは、投稿日時、YouTube上での動画ID（youtube.com/watch/?v=xxxxxxxxxxのxxxxxxxxxx）、タイトルの3つとなっております。
 
@@ -12,7 +12,6 @@
 
 # 参考
 
-- [Nene Ch.桃鈴ねね](https://www.youtube.com/channel/UCAWSyEs_Io8MtpY3m-zqILA)
 - [さなボタン(2)](https://www.natorisana.love/)
 - [さなボタン(2) - Github](https://github.com/sanabutton)
 - [GitHub Pagesを活用して擬似REST APIサーバーを作る](https://qiita.com/Kanahiro/items/9cfa6fa5cc9c3fcb57fd)
