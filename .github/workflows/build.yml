@@ -13,6 +13,8 @@ jobs:
         python-version: 3.8
     - name: run script
       run: |
+        pip install -r reqirements.txt
+        python get-nenelist.py
         python main.py
     - name: deploy
       uses: peaceiris/actions-gh-pages@v3
