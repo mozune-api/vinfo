@@ -1,7 +1,7 @@
 from apiclient.discovery import build
-import config
 import json
 import os
+import sys
 from datetime import datetime
 
 
@@ -15,8 +15,8 @@ def max_date(str_date0, str_date1):
 def init_list():
         return {'v1':[], 'last_update':"2020-08-12"}
 
-def main():
-        youtube = build('youtube', 'v3', developerKey=config.api_key)
+def main(api_key):
+        youtube = build('youtube', 'v3', developerKey=api_key)
         response = youtube.activities().list(
                 part='snippet,contentDetails',
                 channelId='UCAWSyEs_Io8MtpY3m-zqILA',
@@ -44,4 +44,4 @@ def main():
                 f.write(text)
 
 if __name__ == '__main__':
-        main()
+        main(sys.argv[1])
