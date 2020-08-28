@@ -1,5 +1,7 @@
 # mozune-api/vinfo
 
+![](https://github.com/mozune-api/vinfo/workflows/build/badge.svg)
+
 [桃鈴ねねさん](https://www.youtube.com/channel/UCAWSyEs_Io8MtpY3m-zqILA)の動画情報を取得できるAPIを提供しています。
 
 現在提供できるのは、投稿日時、YouTube上での動画ID（youtube.com/watch/?v=xxxxxxxxxxのxxxxxxxxxx）、タイトルの3つとなっております。
