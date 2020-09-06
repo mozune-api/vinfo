@@ -21,4 +21,4 @@
 
 # 連絡先
 
-バグの報告やご意見はnenebutton@gmail.comまで
+バグの報告やご意見はnenebutton [at] gmail.comまで
