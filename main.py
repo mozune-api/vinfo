@@ -14,7 +14,7 @@ def dir_list_of(jsondata, current_dir='')->list:
         return dirs
     elif isinstance(jsondata, list):
         for i in range(len(jsondata)):
-            cur_dir = current_dir + '/' + str(i)
+            cur_dir = current_dir + '/' + jsondata[i]['title']
             dirs.append(cur_dir)
             dirs += dir_list_of(jsondata[i], cur_dir)
     elif isinstance(jsondata, dict):
@@ -33,7 +33,7 @@ def seperate_jsons(jsondata, current_dir='')->list:
         return dirs
     elif isinstance(jsondata, list):
         for i in range(len(jsondata)):
-            cur_dir = current_dir + '/' + str(i)
+            cur_dir = current_dir + '/' + jsondata[i]['title']
             dirs.append(cur_dir)
             dirs += seperate_jsons(jsondata[i], cur_dir)
     elif isinstance(jsondata, dict):
